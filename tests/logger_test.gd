@@ -2,8 +2,8 @@ extends GutTest
 
 var messages: Array[Logger.Message] = []
 
-func TestLogging() :
-	var logger = Logger.get_service(self)
+func TestLogging() -> void:
+	var logger: Logger = Logger.get_service(self)
 	logger.info("Hello world 1")
 	logger.warning("Hello world 2")
 	logger.error("Hello world 3")
